@@ -1,65 +1,55 @@
 # djangoproject_windows
 Part of Literarywebapp with Deep Learning methods 
+Important content: 
 
-Requirements
+1. "texteapp"-directory is a core-app for manager and maitanance, content: 1.1. settings.py; 1.2. urls.py
+
+2. "literary"- directory is a program for textesearch, content: 2.1. "templates"-directory with index.html; 2.2. "fixtures" directory with mypapers.json; 2.3. models.py with database class; 2.4. views.py mixins and generic class based views;
+
+3. "Mytext"- directory is a program for projectmanagement and textesearch (now not completely, but prototype): 3.1."templates"-directory with index.html; 3.2. "fixtures" directory with myproject.json and mytext.json; 3.3. models.py with database class; 2.4. views.py mixins and generic class based views;
+
+4. db.sqlite3 is database
+
+Requierements: 
+
+Python 3.9.12
+Django 4.1.1
+Pip 22.3.1
+Supplementary Library, install with pip: 
+django-easticrearch-dsl; NLTK; pandas; spaCy; TextBlob; numpy; docx; bs4; gensim; djangorestframework; django-filter; scikit-learn; unidecode; tweepy; seaborn; sklearn_crfsuite; drf-json-api; djangorestframework-jsonapi; PyPDF2(deprecated at 24.12.2022) replace with pdf; pdfminer.six; matplotlib; HanTa;
+Djangoproject_state_of_the_art: TensorFlow; biobert_bern (https://pypi.org/project/biobert-bern/); transformers;python-heatclient; seaborn; matplotlib;mpi;venv¿
+User manual (MAC OS):
+1. git clone -link 
+2. %cd djangoproject
+3. %python –m venv venv (=create the venv)
+4. % source venv/bin/activate  (=activate the venv)
+5. pip install --upgrade pip
+6. pip install django
+7. Open the texteapp/settings.py; Enter the ALLOWED_HOSTS = ['127.0.0.1','localhost',], save
+8. %python manage.py createsuperuser
+9. { Enter username (Olgjanius) and password (m57BOG+P)
+10. %python manage.py runserver (=start server)
+11. Start webbrowser, localhost:8000/admin/
+12. Start search for paper under: localhost:8000/search/
+
+User manual (Windows):
+1. git clone -link 
+2. > cd djangoproject
+3. > py --version (=control of python)
+4. > py -m venv venv (=create of virtual enviroment)
+5. > venv\Scripts\activate.bat (=activate of virtual enviroment)
+6. py -m pip install --upgrade pip
+7. py -m pip install Django
+8. Open the texteapp/settings.py; Enter the ALLOWED_HOSTS = ['127.0.0.1','localhost',], save
+9. > python manage.py createsuperuser
+10. { Enter username (Olgjanius) and password (m57BOG+P)
+11. > python manage.py runserver (=start server)
+12. Start webbrowser, localhost:8000/admin/
+13. Start search for paper under: localhost:8000/search/
+Schema:
+
+[Djangoproject.pdf](https://github.com/Olgjanius/djangoproject/files/10244543/Djangoproject.pdf)
+
+
  
 
-Python Pakages
-
-pip-22.3.1 
-
-django-4.1.4 
-
-tensorflow-2.11.0 
-
-keras-2.11.0 
-
-regex-2022.10.31 
-
-nltk-3.8 
-
-pypdf2-2.12.1 
-
-numpy-1.23.5 
-
-pandas-1.5.2 
-
-python-crfsuite-0.9.8 
-
-scipy-1.9.3 
-
-matplotlib: contourpy-1.0.6 cycler-0.11.0 fonttools-4.38.0 kiwisolver-1.4.4 matplotlib-3.6.2 pyparsing-3.0.9 
-
-sklearn-0.0.post1 
-
-gensim-4.2.0 
-
-scikit-learn-1.2.0 
-
-seaborn-0,12,1 
-
-spacy-3.4.4 
-
-en-core-web-md-3.4.1 
-
-CoreNLP-0.0.14 
-
-Pillow-9.3.0 docx-0.2.4 lxml-4.9.2 
-
-pdfminer.six 
-
-torch-1.13.0 
-
-wasabi-0.10.1 
-
-mpi4py-1.0.0 
-
-pytz-2022.6 
-
-pltflow-0.0.5 
-
-pilkit-2.0 
-
-huggingface-hub-0.11.1 
-
-image-1.5.33 

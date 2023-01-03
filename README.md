@@ -1,9 +1,10 @@
 # djangoproject_windows
+Part of Literarywebapp with Deep Learning methods 
 
 Requirements
  
 
-Anhang A 
+Python Pakages
 
 pip-22.3.1 
 

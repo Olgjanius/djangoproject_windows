@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Welcome to Search</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Search for literary</h1>
+      <form method="get">
+          {{ form.as_p }}
+          <input class="btn btn-primary my-1" type="submit" value="search">
+        </form>
+  </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                {% for post in results %}
+                <div class="col-md-4">
+                    <a class="text-dark" href="">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-body">
+                                <h2 style="font-size:15px;font-weight:bold">{{post.title|truncatechars:50}}</h2>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">{{post.authors}}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% empty %}
+                <p>There are no results for your query.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+            <h1>Front Page for Google free datasearch </h1>
+                <a href="https://datasetsearch.research.google.com/">Sources</a>
+
+            <h1>Front Page for Project "Fcy-Rec dependent Phagocytosis" by Reactome</h1>
+                <a href="https://reactome.org/PathwayBrowser/#/R-HSA-166658&PATH=R-HSA-168256,R-HSA-168249">Sources</a>
+
+            <h1>Front Page for ncbi</h1>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/">Sources</a>
+            <!---source:  https://www.ncbi.nlm.nih.gov/books/NBK25498/?report=reader#chapter3.ESearch__ESummaryEFetch-->
+
+            </div>
+            <div class="album col-md-push-5 bg-light">
+              <div class="container">
+                <a href="{% static 'docsources' %}">to docsources</a>
+              </div>
+            </div>
+    </body>
+</html>

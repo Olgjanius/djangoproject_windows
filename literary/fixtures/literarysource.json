@@ -1,0 +1,32 @@
+[
+  {
+    "model": "literary.literarysource",
+    "id": "1",
+    "fields": {
+      "title": "CD11c+ dendritic cells mediate antigen-specific suppression inextracorporeal photopheresis",
+      "author": "Holger Hackstein et al. 2020",
+      "url_q": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7806418/",
+      "pdf_file": "static/CEI-203-329.pdf"
+    }
+  },
+  {
+    "model": "literary.literarysource",
+    "id": "2",
+    "fields": {
+      "title": "Angiogenesis in cancer",
+      "author": "Naoyo Nishida et al. 2006",
+      "url_q": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1993983/",
+      "pdf_file": "static/vhrm0203-213.pdf"
+    }
+  },
+   {
+    "model": "literary.literarysource",
+    "id": "3",
+    "fields": {
+      "title": "A Trp11Arg Substitution in the β3 Signal Peptide Prevents Expression of αIIbβ3 in Patients with...",
+      "author": "Yannick Waxmann et al. 2022",
+      "url_q": "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/s-0042-1756450",
+      "pdf_file": "static/s-0042-1756450.pdf"
+    }
+  }
+]

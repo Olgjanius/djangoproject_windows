@@ -42,7 +42,7 @@ User manual (Windows):
 7. py -m pip install Django
 8. Open the texteapp/settings.py; Enter the ALLOWED_HOSTS = ['127.0.0.1','localhost',], save
 9. > python manage.py createsuperuser
-10. { Enter username (Olgjanius) and password (m57BOG+P)
+10. { Enter username () and password ()
 11. > python manage.py runserver (=start server)
 12. Start webbrowser, localhost:8000/admin/
 13. Start search for paper under: localhost:8000/search/

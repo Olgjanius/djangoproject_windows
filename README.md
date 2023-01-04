@@ -27,7 +27,7 @@ User manual (MAC OS):
 6. pip install django
 7. Open the texteapp/settings.py; Enter the ALLOWED_HOSTS = ['127.0.0.1','localhost',], save
 8. %python manage.py createsuperuser
-9. { Enter username (Olgjanius) and password (m57BOG+P)
+9. { Enter username () and password ()
 10. %python manage.py runserver (=start server)
 11. Start webbrowser, localhost:8000/admin/
 12. Start search for paper under: localhost:8000/search/
